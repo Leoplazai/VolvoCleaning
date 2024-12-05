@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cleaning Services Proposal</title>
+    <title>SPRUCES Cleaning Services Proposal</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,8 +14,28 @@
         header {
             background-color: #01c6a0; /* Aqua */
             color: #ffffff; /* White */
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
         }
         h1, h2, h3 {
             margin: 20px 0 10px;
@@ -28,12 +48,13 @@
             justify-content: center;
             padding: 20px;
             background-color: #f3f1c0; /* Lemon */
+            flex-wrap: wrap;
         }
         .plan {
             background-color: #ffffff; /* White */
             border: 1px solid #183630; /* Forest */
             border-radius: 5px;
-            margin: 0 10px;
+            margin: 10px;
             flex: 1;
             max-width: 300px;
             text-align: center;
@@ -55,6 +76,7 @@
             list-style-type: none;
             padding: 20px;
             text-align: left;
+            min-height: 180px;
         }
         .plan-features li {
             padding: 5px 0;
@@ -77,7 +99,7 @@
             background-color: #183630; /* Forest */
             color: #ffffff; /* White */
             text-align: center;
-            padding: 10px;
+            padding: 20px;
             margin-top: 20px;
         }
         /* Responsive Design */
@@ -108,13 +130,29 @@
             color: #01c6a0; /* Aqua */
             font-weight: bold;
         }
+        .guarantee {
+            background-color: #c7de6b; /* Lime */
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .guarantee h2 {
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Cleaning Services Proposal</h1>
+    <h1>SPRUCES</h1>
+    <h2>Cleaning Services Proposal</h2>
     <p>For 107-115 Spencer Road, Carrara, QLD 4211</p>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#checklists">Checklists</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
 </header>
 
 <div class="intro">
@@ -135,7 +173,7 @@
             <li>Monthly deep cleaning</li>
         </ul>
         <div class="plan-signup">
-            <a href="#">Select Plan</a>
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=Standard">Select Plan</a>
         </div>
     </div>
 
@@ -151,7 +189,7 @@
             <li>Monthly deep cleaning</li>
         </ul>
         <div class="plan-signup">
-            <a href="#">Select Plan</a>
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=Premium">Select Plan</a>
         </div>
     </div>
 
@@ -167,7 +205,7 @@
             <li>Monthly deep cleaning</li>
         </ul>
         <div class="plan-signup">
-            <a href="#">Select Plan</a>
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=HyperCare">Select Plan</a>
         </div>
     </div>
 </div>
@@ -182,6 +220,24 @@
             <th>Hyper Care Clean</th>
         </tr>
         <tr>
+            <td>Spot Cleaning</td>
+            <td class="checkmark">&#10003;</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Full Cleaning Each Visit</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Deep Cleaning & Super Spotless</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
             <td>Vacuum and Mop Floors</td>
             <td class="checkmark">&#10003;</td>
             <td class="checkmark">&#10003;</td>
@@ -194,7 +250,7 @@
             <td class="checkmark">&#10003;</td>
         </tr>
         <tr>
-            <td>Empty Bins</td>
+            <td>Sanitize High-Touch Areas</td>
             <td class="checkmark">&#10003;</td>
             <td class="checkmark">&#10003;</td>
             <td class="checkmark">&#10003;</td>
@@ -206,31 +262,31 @@
             <td class="checkmark">&#10003;</td>
         </tr>
         <tr>
-            <td>Wipe Windows and Sills (Regular)</td>
+            <td>Clean Microwaves & Fridges</td>
             <td></td>
             <td class="checkmark">&#10003;</td>
             <td class="checkmark">&#10003;</td>
         </tr>
         <tr>
-            <td>Sanitize High-Touch Surfaces</td>
-            <td></td>
-            <td class="checkmark">&#10003;</td>
-            <td class="checkmark">&#10003;</td>
-        </tr>
-        <tr>
-            <td>Clean Inside Microwaves</td>
+            <td>Do the Dishes</td>
             <td></td>
             <td></td>
             <td class="checkmark">&#10003;</td>
         </tr>
         <tr>
-            <td>Sanitize Telephones and Keyboards</td>
+            <td>Deep Cleaning Toilets</td>
             <td></td>
             <td></td>
             <td class="checkmark">&#10003;</td>
         </tr>
         <tr>
-            <td>Monthly Carpet Steam Cleaning</td>
+            <td>Unlimited Fix-Ups</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>24/7 Support & Same Day Response</td>
             <td></td>
             <td></td>
             <td class="checkmark">&#10003;</td>
@@ -239,55 +295,26 @@
 </div>
 
 <div class="intro">
-    <h2>Detailed Scope of Work</h2>
-
-    <h3>Standard Clean</h3>
-    <p><strong>Regular Cleaning (3 hours per visit):</strong></p>
-    <ul>
-        <li>Vacuum and mop floors in all areas</li>
-        <li>Dust surfaces in offices and common areas</li>
-        <li>Empty bins and replace liners</li>
-        <li>Clean and sanitize toilets and basins</li>
-        <li>General housekeeping in kitchen areas</li>
-    </ul>
-    <p><strong>Monthly Deep Cleaning (4 hours once a month):</strong></p>
-    <ul>
-        <li>Clean all windows and sills</li>
-        <li>High and low dusting</li>
-        <li>Deep clean kitchen appliances</li>
-    </ul>
-
-    <h3>Premium Clean</h3>
-    <p><strong>Includes all Standard Clean services, plus:</strong></p>
-    <ul>
-        <li>Wipe windows and sills during regular visits</li>
-        <li>Sanitize high-touch surfaces (doorknobs, switches)</li>
-        <li>Spot cleaning of walls and doors</li>
-    </ul>
-
-    <h3>Hyper Care Clean</h3>
-    <p><strong>Includes all Premium Clean services, plus:</strong></p>
-    <ul>
-        <li>Clean and polish glass surfaces</li>
-        <li>Sanitize telephones and keyboards</li>
-        <li>Clean inside microwaves after use</li>
-        <li>Monthly carpet steam cleaning</li>
-    </ul>
+    <h2>Guarantee</h2>
+    <div class="guarantee">
+        <h2>Our Promise to You</h2>
+        <p>If you're not happy, we will send someone back the same day to fix at no cost. Unlimited fix-ups in both the Premium and Hyper Care plans. Hyper Care also includes 24/7 support and same-day response for extra cleaning.</p>
+    </div>
 </div>
 
 <div class="intro">
     <h2>Terms and Conditions</h2>
     <ul>
-        <li><strong>Payment Terms:</strong> Invoices will be issued monthly, with payment due within 14 days.</li>
+        <li><strong>Payment Terms:</strong> Invoice paid in advance for 3% discount; alternatively, payment due within 14 days.</li>
+        <li><strong>Contract Duration:</strong> No lock-in contract. Enjoy a 5% discount with a 12-month plan or a 10% discount with a 24-month plan.</li>
         <li><strong>Supplies and Equipment:</strong> All cleaning supplies and equipment will be provided by us.</li>
-        <li><strong>Contract Duration:</strong> Services to commence on [Start Date], with a minimum contract period of 6 months.</li>
         <li><strong>Cancellation Policy:</strong> A notice period of 30 days is required for any cancellations or rescheduling of services.</li>
     </ul>
 </div>
 
-<footer>
-    <p>&copy; [Current Year] [Your Company Name]. All rights reserved.</p>
-    <p>Contact us at [Your Contact Information]</p>
+<footer id="contact">
+    <p>&copy; 2024 Spruces.co Pty Ltd</p>
+    <p>Contact us at <a href="mailto:hi@spruces.co" style="color:#ffffff;">hi@spruces.co</a> or call us at <a href="tel:1300940202" style="color:#ffffff;">1300 940 202</a></p>
 </footer>
 
 </body>
