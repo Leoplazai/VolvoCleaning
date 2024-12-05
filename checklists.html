@@ -2,30 +2,143 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SPRUCES Cleaning Checklists</title>
+    <title>SPRUCES Cleaning Services Proposal</title>
     <style>
-        /* Same styles as the main page */
-        /* ... (Copy the styles from the main page) ... */
-        /* Additional styles for the checklist page */
-        .upload-section {
-            padding: 20px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* White */
+            color: #000000; /* Black */
+            margin: 0;
+            padding: 0;
         }
-        .upload-section h2 {
-            margin-top: 0;
-        }
-        .upload-section form {
-            margin: 20px 0;
-        }
-        .upload-section input[type="file"] {
-            margin-bottom: 10px;
-        }
-        .upload-section input[type="submit"] {
+        header {
             background-color: #01c6a0; /* Aqua */
             color: #ffffff; /* White */
-            padding: 10px 20px;
-            border: none;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header h2 {
+            margin-top: 10px;
+            font-size: 24px;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            margin-left: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1, h2, h3 {
+            margin: 20px 0 10px;
+        }
+        .intro {
+            padding: 20px;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f3f1c0; /* Lemon */
+            flex-wrap: wrap;
+        }
+        .plan {
+            background-color: #ffffff; /* White */
+            border: 1px solid #183630; /* Forest */
             border-radius: 5px;
-            cursor: pointer;
+            margin: 10px;
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(24,54,48,0.1);
+        }
+        .plan-header {
+            background-color: #c7de6b; /* Lime */
+            padding: 20px;
+            border-bottom: 1px solid #183630; /* Forest */
+        }
+        .plan-header h2 {
+            margin: 0;
+        }
+        .plan-price {
+            font-size: 24px;
+            color: #183630; /* Forest */
+        }
+        .plan-features {
+            list-style-type: none;
+            padding: 20px;
+            text-align: left;
+            min-height: 180px;
+        }
+        .plan-features li {
+            padding: 5px 0;
+            border-bottom: 1px solid #f3f1c0; /* Lemon */
+        }
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+        .plan-signup {
+            padding: 20px;
+        }
+        .plan-signup a {
+            text-decoration: none;
+            color: #ffffff; /* White */
+            background-color: #01c6a0; /* Aqua */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #183630; /* Forest */
+            color: #ffffff; /* White */
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pricing-table {
+                flex-direction: column;
+                align-items: center;
+            }
+            .plan {
+                margin-bottom: 20px;
+            }
+        }
+        /* Table for Checklist */
+        .checklist {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .checklist th, .checklist td {
+            border: 1px solid #183630; /* Forest */
+            padding: 10px;
+            text-align: center;
+        }
+        .checklist th {
+            background-color: #c7de6b; /* Lime */
+        }
+        .checkmark {
+            color: #01c6a0; /* Aqua */
+            font-weight: bold;
+        }
+        .guarantee {
+            background-color: #c7de6b; /* Lime */
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .guarantee h2 {
+            margin-top: 0;
         }
     </style>
 </head>
@@ -33,73 +146,170 @@
 
 <header>
     <h1>SPRUCES</h1>
-    <h2>Cleaning Service Checklists</h2>
+    <h2>Cleaning Services Proposal</h2>
+    <p>For 107-115 Spencer Road, Carrara, QLD 4211</p>
     <nav>
         <a href="index.html">Home</a>
-        <a href="#">Checklists</a>
+        <a href="checklists.html">Checklists</a>
         <a href="#contact">Contact Us</a>
     </nav>
 </header>
 
 <div class="intro">
-    <h2>Checklists for Each Service Level</h2>
-    <p>Select a service level to view the detailed cleaning checklist.</p>
-    <!-- Links or buttons to the detailed checklists -->
-    <ul>
-        <li><a href="#standard">Standard Clean Checklist</a></li>
-        <li><a href="#premium">Premium Clean Checklist</a></li>
-        <li><a href="#hypercare">Hyper Care Clean Checklist</a></li>
-    </ul>
-
-    <h3 id="standard">Standard Clean Checklist</h3>
-    <ul>
-        <li>Spot Cleaning</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <!-- Add more items as per the standard clean scope -->
-    </ul>
-
-    <h3 id="premium">Premium Clean Checklist</h3>
-    <ul>
-        <li>Full Cleaning Each Visit</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <li>Clean Microwaves & Fridges</li>
-        <li>Unlimited Fix-Ups</li>
-        <!-- Add more items as per the premium clean scope -->
-    </ul>
-
-    <h3 id="hypercare">Hyper Care Clean Checklist</h3>
-    <ul>
-        <li>Deep Cleaning & Super Spotless</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <li>Clean Microwaves & Fridges</li>
-        <li>Do the Dishes</li>
-        <li>Deep Cleaning Toilets</li>
-        <li>Unlimited Fix-Ups</li>
-        <li>24/7 Support & Same Day Response</li>
-        <!-- Add more items as per the hyper care clean scope -->
-    </ul>
+    <h2>Introduction</h2>
+    <p>We are pleased to present our tailored cleaning service proposal for your premises. To meet your specific needs and budget, we offer three service levels: <strong>Standard Clean</strong>, <strong>Premium Clean</strong>, and <strong>Hyper Care Clean</strong>.</p>
 </div>
 
-<div class="upload-section">
-    <h2>Upload Pictures of Each Area</h2>
-    <p>You can upload pictures to help us understand your cleaning needs better.</p>
-    <form action="#" method="post" enctype="multipart/form-data">
-        <label for="area">Select Area:</label><br>
-        <select name="area" id="area">
-            <option value="boardroom">Boardroom</option>
-            <option value="physio">Physio Room</option>
-            <option value="training">Training Room</option>
-            <!-- Add more areas as needed -->
-        </select><br><br>
-        <input type="file" name="fileToUpload" id="fileToUpload"><br>
-        <input type="submit" value="Upload Image" name="submit">
-    </form>
+<div class="pricing-table">
+    <!-- Standard Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Standard Clean</h2>
+            <p class="plan-price">$2,600/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>3 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=Standard">Select Plan</a>
+        </div>
+    </div>
+
+    <!-- Premium Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Premium Clean</h2>
+            <p class="plan-price">$2,990/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>3.5 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=Premium">Select Plan</a>
+        </div>
+    </div>
+
+    <!-- Hyper Care Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Hyper Care Clean</h2>
+            <p class="plan-price">$3,445/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>4 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="https://form.typeform.com/to/EjeSVTHX#facility_type=HyperCare">Select Plan</a>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <h2>Service Comparison</h2>
+    <table class="checklist">
+        <tr>
+            <th>Features</th>
+            <th>Standard Clean</th>
+            <th>Premium Clean</th>
+            <th>Hyper Care Clean</th>
+        </tr>
+        <tr>
+            <td>Spot Cleaning</td>
+            <td class="checkmark">&#10003;</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Full Cleaning Each Visit</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Deep Cleaning & Super Spotless</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Vacuum and Mop Floors</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Dust Surfaces</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Sanitize High-Touch Areas</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Clean Windows (Monthly)</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Clean Microwaves & Fridges</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Do the Dishes</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Deep Cleaning Toilets</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Unlimited Fix-Ups</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>24/7 Support & Same Day Response</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+    </table>
+</div>
+
+<div class="intro">
+    <h2>Guarantee</h2>
+    <div class="guarantee">
+        <h2>Our Promise to You</h2>
+        <p>If you're not happy, we will send someone back the same day to fix at no cost. Unlimited fix-ups in both the Premium and Hyper Care plans. Hyper Care also includes 24/7 support and same-day response for extra cleaning.</p>
+    </div>
+</div>
+
+<div class="intro">
+    <h2>Terms and Conditions</h2>
+    <ul>
+        <li><strong>Payment Terms:</strong> Invoice paid in advance for 3% discount; alternatively, payment due within 14 days.</li>
+        <li><strong>Contract Duration:</strong> No lock-in contract. Enjoy a 5% discount with a 12-month plan or a 10% discount with a 24-month plan.</li>
+        <li><strong>Supplies and Equipment:</strong> All cleaning supplies and equipment will be provided by us.</li>
+        <li><strong>Cancellation Policy:</strong> A notice period of 30 days is required for any cancellations or rescheduling of services.</li>
+    </ul>
 </div>
 
 <footer id="contact">
