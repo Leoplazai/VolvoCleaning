@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SPRUCES Cleaning Checklists</title>
+    <style>
+        /* Same styles as the main page */
+        /* ... (Copy the styles from the main page) ... */
+        /* Additional styles for the checklist page */
+        .upload-section {
+            padding: 20px;
+        }
+        .upload-section h2 {
+            margin-top: 0;
+        }
+        .upload-section form {
+            margin: 20px 0;
+        }
+        .upload-section input[type="file"] {
+            margin-bottom: 10px;
+        }
+        .upload-section input[type="submit"] {
+            background-color: #01c6a0; /* Aqua */
+            color: #ffffff; /* White */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SPRUCES</h1>
+    <h2>Cleaning Service Checklists</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Checklists</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<div class="intro">
+    <h2>Checklists for Each Service Level</h2>
+    <p>Select a service level to view the detailed cleaning checklist.</p>
+    <!-- Links or buttons to the detailed checklists -->
+    <ul>
+        <li><a href="#standard">Standard Clean Checklist</a></li>
+        <li><a href="#premium">Premium Clean Checklist</a></li>
+        <li><a href="#hypercare">Hyper Care Clean Checklist</a></li>
+    </ul>
+
+    <h3 id="standard">Standard Clean Checklist</h3>
+    <ul>
+        <li>Spot Cleaning</li>
+        <li>Vacuum and Mop Floors</li>
+        <li>Dust Surfaces</li>
+        <li>Sanitize High-Touch Areas</li>
+        <!-- Add more items as per the standard clean scope -->
+    </ul>
+
+    <h3 id="premium">Premium Clean Checklist</h3>
+    <ul>
+        <li>Full Cleaning Each Visit</li>
+        <li>Vacuum and Mop Floors</li>
+        <li>Dust Surfaces</li>
+        <li>Sanitize High-Touch Areas</li>
+        <li>Clean Microwaves & Fridges</li>
+        <li>Unlimited Fix-Ups</li>
+        <!-- Add more items as per the premium clean scope -->
+    </ul>
+
+    <h3 id="hypercare">Hyper Care Clean Checklist</h3>
+    <ul>
+        <li>Deep Cleaning & Super Spotless</li>
+        <li>Vacuum and Mop Floors</li>
+        <li>Dust Surfaces</li>
+        <li>Sanitize High-Touch Areas</li>
+        <li>Clean Microwaves & Fridges</li>
+        <li>Do the Dishes</li>
+        <li>Deep Cleaning Toilets</li>
+        <li>Unlimited Fix-Ups</li>
+        <li>24/7 Support & Same Day Response</li>
+        <!-- Add more items as per the hyper care clean scope -->
+    </ul>
+</div>
+
+<div class="upload-section">
+    <h2>Upload Pictures of Each Area</h2>
+    <p>You can upload pictures to help us understand your cleaning needs better.</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="area">Select Area:</label><br>
+        <select name="area" id="area">
+            <option value="boardroom">Boardroom</option>
+            <option value="physio">Physio Room</option>
+            <option value="training">Training Room</option>
+            <!-- Add more areas as needed -->
+        </select><br><br>
+        <input type="file" name="fileToUpload" id="fileToUpload"><br>
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
+</div>
+
+<footer id="contact">
+    <p>&copy; 2024 Spruces.co Pty Ltd</p>
+    <p>Contact us at <a href="mailto:hi@spruces.co" style="color:#ffffff;">hi@spruces.co</a> or call us at <a href="tel:1300940202" style="color:#ffffff;">1300 940 202</a></p>
+</footer>
+
+</body>
+</html>
