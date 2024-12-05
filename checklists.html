@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>SPRUCES Cleaning Checklists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* Global Styles */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff; /* White */
-            color: #000000; /* Black */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #000000;
             margin: 0;
             padding: 0;
         }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        /* Header Styles */
         header {
-            background-color: #01c6a0; /* Aqua */
-            color: #ffffff; /* White */
+            background-color: #01c6a0;
+            color: #ffffff;
             padding: 40px 20px;
             text-align: center;
             position: relative;
@@ -34,48 +41,89 @@
         nav a {
             color: #ffffff;
             margin-left: 15px;
-            text-decoration: none;
             font-weight: bold;
         }
-        h1, h2, h3 {
-            margin: 20px 0 10px;
+        /* Responsive Navigation */
+        @media (max-width: 768px) {
+            nav {
+                position: static;
+                margin-top: 10px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
         }
-        .intro {
+        /* Content Styles */
+        .content {
             padding: 20px;
         }
-        footer {
-            background-color: #183630; /* Forest */
-            color: #ffffff; /* White */
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
+        h3 {
+            background-color: #c7de6b;
+            padding: 10px;
+            border-radius: 5px;
         }
-        .upload-section {
-            padding: 20px;
+        /* Checklist Styles */
+        .checklist-form {
+            width: 100%;
+            margin-bottom: 40px;
         }
-        .upload-section h2 {
-            margin-top: 0;
+        .area-section {
+            margin-bottom: 30px;
         }
-        .upload-section form {
-            margin: 20px 0;
-        }
-        .upload-section input[type="file"] {
+        .task-item {
+            display: flex;
+            align-items: center;
             margin-bottom: 10px;
         }
-        .upload-section input[type="submit"] {
-            background-color: #01c6a0; /* Aqua */
-            color: #ffffff; /* White */
+        .task-item input[type="checkbox"] {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .task-label {
+            flex: 1;
+        }
+        .task-actions {
+            display: flex;
+            align-items: center;
+        }
+        .task-actions input[type="file"] {
+            margin-right: 10px;
+        }
+        .task-comments {
+            width: 100%;
+            margin-top: 5px;
+        }
+        /* Button Styles */
+        .submit-button {
+            background-color: #01c6a0;
+            color: #ffffff;
             padding: 10px 20px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                position: static;
-                text-align: center;
-                margin-top: 10px;
+        /* Footer */
+        footer {
+            background-color: #183630;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+            header h2 {
+                font-size: 18px;
+            }
+            .task-actions {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .task-actions input[type="file"] {
+                margin-bottom: 5px;
             }
         }
     </style>
@@ -92,78 +140,38 @@
     </nav>
 </header>
 
-<div class="intro">
-    <h2>Checklists for Each Service Level</h2>
-    <p>Select a service level to view the detailed cleaning checklist.</p>
-    <!-- Links or buttons to the detailed checklists -->
-    <ul>
-        <li><a href="#standard">Standard Clean Checklist</a></li>
-        <li><a href="#premium">Premium Clean Checklist</a></li>
-        <li><a href="#hypercare">Hyper Care Clean Checklist</a></li>
-    </ul>
+<div class="content">
+    <h2>Detailed Cleaning Checklists</h2>
+    <p>Please review the tasks below. You can check off completed tasks, upload photos, and leave comments.</p>
 
-    <h3 id="standard">Standard Clean Checklist</h3>
-    <ul>
-        <li>Spot Cleaning</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <li>Empty Bins</li>
-        <li>General Housekeeping in Kitchen Areas</li>
-        <li>Clean and Sanitize Toilets and Basins</li>
-        <li>Monthly Deep Cleaning of Windows and Sills</li>
-    </ul>
+    <!-- Begin Checklist Form -->
+    <form class="checklist-form" action="#" method="post" enctype="multipart/form-data">
+        <!-- Standard Clean Checklist -->
+        <h3 id="standard">Standard Clean Checklist</h3>
 
-    <h3 id="premium">Premium Clean Checklist</h3>
-    <ul>
-        <li>Full Cleaning Each Visit</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <li>Empty Bins</li>
-        <li>Clean Microwaves & Fridges</li>
-        <li>Wipe Windows and Sills</li>
-        <li>Spot Cleaning of Walls and Doors</li>
-        <li>Sanitize Telephones and Keyboards</li>
-        <li>Unlimited Fix-Ups</li>
-    </ul>
+        <!-- Example Area -->
+        <div class="area-section">
+            <h4>UPSTAIRS - Boardroom</h4>
+            <!-- Task Item -->
+            <div class="task-item">
+                <input type="checkbox" name="task1" id="task1">
+                <label for="task1" class="task-label">Vacuum floors</label>
+                <div class="task-actions">
+                    <input type="file" name="photo1" accept="image/*">
+                    <input type="text" name="comment1" class="task-comments" placeholder="Comments">
+                </div>
+            </div>
+            <!-- Repeat for other tasks -->
+            <!-- ... -->
+        </div>
 
-    <h3 id="hypercare">Hyper Care Clean Checklist</h3>
-    <ul>
-        <li>Deep Cleaning & Super Spotless</li>
-        <li>Vacuum and Mop Floors</li>
-        <li>Dust Surfaces</li>
-        <li>Sanitize High-Touch Areas</li>
-        <li>Empty Bins</li>
-        <li>Clean Microwaves & Fridges</li>
-        <li>Do the Dishes</li>
-        <li>Deep Cleaning Toilets</li>
-        <li>Wipe Windows and Sills</li>
-        <li>Sanitize Telephones and Keyboards</li>
-        <li>Clean and Polish Glass Surfaces</li>
-        <li>24/7 Support & Same Day Response</li>
-        <li>Unlimited Fix-Ups</li>
-    </ul>
-</div>
+        <!-- Repeat for other areas and tasks -->
+        <!-- ... -->
 
-<div class="upload-section">
-    <h2>Upload Pictures of Each Area</h2>
-    <p>You can upload pictures to help us understand your cleaning needs better.</p>
-    <form action="#" method="post" enctype="multipart/form-data">
-        <label for="area">Select Area:</label><br>
-        <select name="area" id="area">
-            <option value="boardroom">Boardroom</option>
-            <option value="physio">Physio Room</option>
-            <option value="training">Training Room</option>
-            <option value="spare_office">Spare Office</option>
-            <option value="change_room">Change Room</option>
-            <option value="kitchen">Kitchen</option>
-            <option value="toilets">Toilets</option>
-            <!-- Add more areas as needed -->
-        </select><br><br>
-        <input type="file" name="fileToUpload" id="fileToUpload"><br>
-        <input type="submit" value="Upload Image" name="submit">
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Submit Checklist</button>
     </form>
+    <!-- End Checklist Form -->
 </div>
 
 <footer id="contact">
