@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cleaning Services Proposal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff; /* White */
+            color: #000000; /* Black */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #01c6a0; /* Aqua */
+            color: #ffffff; /* White */
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin: 20px 0 10px;
+        }
+        .intro {
+            padding: 20px;
+        }
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #f3f1c0; /* Lemon */
+        }
+        .plan {
+            background-color: #ffffff; /* White */
+            border: 1px solid #183630; /* Forest */
+            border-radius: 5px;
+            margin: 0 10px;
+            flex: 1;
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(24,54,48,0.1);
+        }
+        .plan-header {
+            background-color: #c7de6b; /* Lime */
+            padding: 20px;
+            border-bottom: 1px solid #183630; /* Forest */
+        }
+        .plan-header h2 {
+            margin: 0;
+        }
+        .plan-price {
+            font-size: 24px;
+            color: #183630; /* Forest */
+        }
+        .plan-features {
+            list-style-type: none;
+            padding: 20px;
+            text-align: left;
+        }
+        .plan-features li {
+            padding: 5px 0;
+            border-bottom: 1px solid #f3f1c0; /* Lemon */
+        }
+        .plan-features li:last-child {
+            border-bottom: none;
+        }
+        .plan-signup {
+            padding: 20px;
+        }
+        .plan-signup a {
+            text-decoration: none;
+            color: #ffffff; /* White */
+            background-color: #01c6a0; /* Aqua */
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #183630; /* Forest */
+            color: #ffffff; /* White */
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .pricing-table {
+                flex-direction: column;
+                align-items: center;
+            }
+            .plan {
+                margin-bottom: 20px;
+            }
+        }
+        /* Table for Checklist */
+        .checklist {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .checklist th, .checklist td {
+            border: 1px solid #183630; /* Forest */
+            padding: 10px;
+            text-align: center;
+        }
+        .checklist th {
+            background-color: #c7de6b; /* Lime */
+        }
+        .checkmark {
+            color: #01c6a0; /* Aqua */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Cleaning Services Proposal</h1>
+    <p>For 107-115 Spencer Road, Carrara, QLD 4211</p>
+</header>
+
+<div class="intro">
+    <h2>Introduction</h2>
+    <p>We are pleased to present our tailored cleaning service proposal for your premises. To meet your specific needs and budget, we offer three service levels: <strong>Standard Clean</strong>, <strong>Premium Clean</strong>, and <strong>Hyper Care Clean</strong>.</p>
+</div>
+
+<div class="pricing-table">
+    <!-- Standard Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Standard Clean</h2>
+            <p class="plan-price">$2,600/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>3 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="#">Select Plan</a>
+        </div>
+    </div>
+
+    <!-- Premium Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Premium Clean</h2>
+            <p class="plan-price">$2,990/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>3.5 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="#">Select Plan</a>
+        </div>
+    </div>
+
+    <!-- Hyper Care Clean Plan -->
+    <div class="plan">
+        <div class="plan-header">
+            <h2>Hyper Care Clean</h2>
+            <p class="plan-price">$3,445/month</p>
+        </div>
+        <ul class="plan-features">
+            <li>4 hours per visit</li>
+            <li>3 visits per week</li>
+            <li>Monthly deep cleaning</li>
+        </ul>
+        <div class="plan-signup">
+            <a href="#">Select Plan</a>
+        </div>
+    </div>
+</div>
+
+<div class="intro">
+    <h2>Service Comparison</h2>
+    <table class="checklist">
+        <tr>
+            <th>Features</th>
+            <th>Standard Clean</th>
+            <th>Premium Clean</th>
+            <th>Hyper Care Clean</th>
+        </tr>
+        <tr>
+            <td>Vacuum and Mop Floors</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Dust Surfaces</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Empty Bins</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Clean Windows (Monthly)</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Wipe Windows and Sills (Regular)</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Sanitize High-Touch Surfaces</td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Clean Inside Microwaves</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Sanitize Telephones and Keyboards</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+        <tr>
+            <td>Monthly Carpet Steam Cleaning</td>
+            <td></td>
+            <td></td>
+            <td class="checkmark">&#10003;</td>
+        </tr>
+    </table>
+</div>
+
+<div class="intro">
+    <h2>Detailed Scope of Work</h2>
+
+    <h3>Standard Clean</h3>
+    <p><strong>Regular Cleaning (3 hours per visit):</strong></p>
+    <ul>
+        <li>Vacuum and mop floors in all areas</li>
+        <li>Dust surfaces in offices and common areas</li>
+        <li>Empty bins and replace liners</li>
+        <li>Clean and sanitize toilets and basins</li>
+        <li>General housekeeping in kitchen areas</li>
+    </ul>
+    <p><strong>Monthly Deep Cleaning (4 hours once a month):</strong></p>
+    <ul>
+        <li>Clean all windows and sills</li>
+        <li>High and low dusting</li>
+        <li>Deep clean kitchen appliances</li>
+    </ul>
+
+    <h3>Premium Clean</h3>
+    <p><strong>Includes all Standard Clean services, plus:</strong></p>
+    <ul>
+        <li>Wipe windows and sills during regular visits</li>
+        <li>Sanitize high-touch surfaces (doorknobs, switches)</li>
+        <li>Spot cleaning of walls and doors</li>
+    </ul>
+
+    <h3>Hyper Care Clean</h3>
+    <p><strong>Includes all Premium Clean services, plus:</strong></p>
+    <ul>
+        <li>Clean and polish glass surfaces</li>
+        <li>Sanitize telephones and keyboards</li>
+        <li>Clean inside microwaves after use</li>
+        <li>Monthly carpet steam cleaning</li>
+    </ul>
+</div>
+
+<div class="intro">
+    <h2>Terms and Conditions</h2>
+    <ul>
+        <li><strong>Payment Terms:</strong> Invoices will be issued monthly, with payment due within 14 days.</li>
+        <li><strong>Supplies and Equipment:</strong> All cleaning supplies and equipment will be provided by us.</li>
+        <li><strong>Contract Duration:</strong> Services to commence on [Start Date], with a minimum contract period of 6 months.</li>
+        <li><strong>Cancellation Policy:</strong> A notice period of 30 days is required for any cancellations or rescheduling of services.</li>
+    </ul>
+</div>
+
+<footer>
+    <p>&copy; [Current Year] [Your Company Name]. All rights reserved.</p>
+    <p>Contact us at [Your Contact Information]</p>
+</footer>
+
+</body>
+</html>
